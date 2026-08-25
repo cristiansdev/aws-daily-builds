@@ -1,0 +1,17 @@
+{
+  "LambdaFunctionConfigurations": [
+    {
+      "Id": "csv-input-trigger",
+      "LambdaFunctionArn": "__FUNCTION_ARN__",
+      "Events": ["s3:ObjectCreated:*"],
+      "Filter": {
+        "Key": {
+          "FilterRules": [
+            { "Name": "prefix", "Value": "input/" },
+            { "Name": "suffix", "Value": ".csv" }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Type checkers / linters
+.mypy_cache/
+.ruff_cache/
+
+# AWS SAM
+.aws-sam/
+samconfig.toml
+
+# AWS CDK
+cdk.out/
+cdk.context.json
+
+# Terraform (por si algún build lo usa)
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# AWS credentials locales
+.aws/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dataset (no redistribuir, solo referenciar en README)
+*.csv
+
+# Artefactos de build de Lambda
+*.zip
+
+# Terraform - variables que pueden traer secretos
+*.tfvars
+
+# --- Para cuando lleguen los builds de Node/TypeScript ---
+node_modules/
+npm-debug.log*
+.next/
+out/
+
+# --- Para cuando lleguen los builds de Java ---
+target/
+*.class
+.mvn/
+.gradle/
+
+# Artefactos generados desde templates (contienen datos reales de la cuenta)
+lambda-policy.json
+notification.json
