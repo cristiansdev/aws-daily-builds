@@ -1,0 +1,15 @@
+{
+  "LambdaFunctionConfigurations": [
+    {
+      "LambdaFunctionArn": "__FUNCTION_ARN__",
+      "Events": ["s3:ObjectCreated:*"],
+      "Filter": {
+        "Key": {
+          "FilterRules": [
+            {"Name": "prefix", "Value": "input/"}
+          ]
+        }
+      }
+    }
+  ]
+}

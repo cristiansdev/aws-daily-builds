@@ -86,3 +86,14 @@ target/
 # Artefactos generados desde templates (contienen datos reales de la cuenta)
 lambda-policy.json
 notification.json
+
+*.joblib
+*.pklnotification.json
+test-event.json
+response.json
+reporte_prueba.csv
+input_prueba*.csv
+layer/
+packages/
+layer_content.zip
+python/function.zip
