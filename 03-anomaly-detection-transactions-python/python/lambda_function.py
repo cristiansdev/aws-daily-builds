@@ -2,11 +2,12 @@ import boto3
 import joblib
 import pandas as pd
 import io
+import os
 from urllib.parse import unquote_plus
 
 s3 = boto3.client("s3")
 
-MODEL_BUCKET = "anomaly-detection-build03-2026"
+MODEL_BUCKET = os.environ["MODEL_BUCKET"]
 MODEL_KEY = "model/isolation_forest.joblib"
 
 # --- Carga del artefacto FUERA del handler (warm start) ---
