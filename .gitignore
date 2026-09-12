@@ -43,7 +43,6 @@ cdk.context.json
 .terraform/
 *.tfstate
 *.tfstate.*
-.terraform.lock.hcl
 
 # AWS credentials locales
 .aws/
@@ -88,7 +87,8 @@ lambda-policy.json
 notification.json
 
 *.joblib
-*.pklnotification.json
+*.pkl
+notification.json
 test-event.json
 response.json
 reporte_prueba.csv
@@ -97,3 +97,4 @@ layer/
 packages/
 layer_content.zip
 python/function.zip
+dependency-reduced-pom.xml
